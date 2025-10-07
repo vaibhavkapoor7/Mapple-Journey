@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share Your Story – Maple Journey</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/share-your-stories.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand__logo">
+          <img src="images/logo.png" alt="Maple Journey logo">
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="share-your-stories.html" class="active">Share your stories</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="cta-mini">Sign in/ Sign up</a>
+    </div>
+  </header>
+
+  <!-- HERO (compact) -->
+  <section class="hero hero--compact">
+    <div class="wrap hero__content hero__content--single">
+      <div class="hero__copy">
+        <p class="kicker">Community</p>
+        <h1 class="h1">Share Your Story</h1>
+        <p class="lead">
+          Your experience can guide someone else. Tell us about your journey—what helped,
+          what surprised you, and what you wish you knew when you arrived.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHARE FORM PANEL -->
+  <section class="share">
+    <div class="wrap">
+      <!-- Lavender panel with rounded corners -->
+      <div class="form-panel">
+        <div class="panel-head">
+          <h2>Tell us about yourself</h2>
+          <p>Provide brief details about yourself, to gain access to our trusted pathway</p>
+        </div>
+
+        <!-- White card with the form -->
+        <form class="story-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+          <div class="field">
+            <label for="display_name">Name</label>
+            <input id="display_name" name="display_name" type="text" placeholder="Dennis Obaro" required>
+          </div>
+
+          <div class="field">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="10" max="120" placeholder="32">
+          </div>
+
+          <div class="field">
+            <label for="country">Country</label>
+            <div class="input-with-flag">
+              <span class="flag">🇨🇦</span>
+              <input id="country" name="country" type="text" placeholder="Canada">
+            </div>
+          </div>
+
+          <div class="grid-two">
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="">Choose a topic</option>
+                <option>Education</option>
+                <option>Housing</option>
+                <option>Work</option>
+                <option>Culture & Community</option>
+                <option>Health & Wellbeing</option>
+                <option>Legal / Documents</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="arrival_year">Arrival year</label>
+              <input id="arrival_year" name="arrival_year" type="number" min="1990" max="2100" placeholder="2024">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="title">Story title</label>
+            <input id="title" name="title" type="text" placeholder="How I found my first apartment in Vancouver">
+          </div>
+
+          <div class="field">
+            <label for="story">Your story</label>
+            <textarea id="story" name="story" rows="8" minlength="120" maxlength="3000"
+              placeholder="Share your experience, tips, and what you learned…"></textarea>
+            <div class="meta-row">
+              <small>Aim for 200–1200 words.</small>
+              <small class="counter"><span id="count">0</span>/3000</small>
+            </div>
+          </div>
+
+          <div class="grid-two">
+            <div class="field">
+              <label for="photos">Photos (optional)</label>
+              <input id="photos" name="photos" type="file" accept="image/*" multiple>
+              <small>JPEG/PNG up to 5MB each.</small>
+            </div>
+            <div class="field">
+              <label for="video">Video (optional)</label>
+              <input id="video" name="video" type="file" accept="video/*">
+              <small>Short clips recommended.</small>
+            </div>
+          </div>
+
+          <fieldset class="consent">
+            <legend>Consent</legend>
+            <label class="check"><input type="checkbox" required> I confirm this is my story or I have permission to
+              share it.</label>
+            <label class="check"><input type="checkbox" required> I allow Maple Journey to publish and lightly edit for
+              clarity.</label>
+            <label class="check"><input type="checkbox" required> I agree to the privacy policy.</label>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit" class="btn btn--blue">Submit story</button>
+            <button type="reset" class="btn btn--ghost">Clear</button>
+          </div>
+
+          <p class="form-note">No account needed. Submissions are reviewed before publishing.</p>
+        </form>
+        <!-- FOOTER -->
+        <footer>
+          <div class="container footer__grid">
+            <div>
+              <span class="brand__logo"></span>
+              <p>Thanks for contributing to Maple Journey. Your story can help someone feel less alone.</p>
+            </div>
+            <div>
+              <button class="cta">Subscribe</button>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Live character counter -->
+        <script>
+          const story = document.getElementById('story');
+          const count = document.getElementById('count');
+          if (story && count) {
+            const update = () => { count.textContent = story.value.length; };
+            story.addEventListener('input', update); update();
+          }
+        </script>
+</body>
+
+</html>

@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Share Your Story – Maple Journey</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Base site styles (your existing file) -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/about.css" />
-  <!-- Page-specific styles for this form -->
   <link rel="stylesheet" href="css/share-your-stories.css" />
 </head>
-<body>
 
-  <!-- HEADER (kept the same) -->
+<body>
   <header>
     <div class="container nav">
       <div class="brand">
@@ -28,7 +25,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="share-your-story.html" class="active">Share your stories</a></li>
+          <li><a href="share-your-stories.html" class="active">Share your stories</a></li>
         </ul>
       </nav>
       <a href="#" class="cta-mini">Sign in/ Sign up</a>
@@ -130,8 +127,10 @@
 
           <fieldset class="consent">
             <legend>Consent</legend>
-            <label class="check"><input type="checkbox" required> I confirm this is my story or I have permission to share it.</label>
-            <label class="check"><input type="checkbox" required> I allow Maple Journey to publish and lightly edit for clarity.</label>
+            <label class="check"><input type="checkbox" required> I confirm this is my story or I have permission to
+              share it.</label>
+            <label class="check"><input type="checkbox" required> I allow Maple Journey to publish and lightly edit for
+              clarity.</label>
             <label class="check"><input type="checkbox" required> I agree to the privacy policy.</label>
           </fieldset>
 
@@ -142,27 +141,28 @@
 
           <p class="form-note">No account needed. Submissions are reviewed before publishing.</p>
         </form>
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer__grid">
-      <div>
-        <span class="brand__logo"></span>
-        <p>Thanks for contributing to Maple Journey. Your story can help someone feel less alone.</p>
-      </div>
-      <div>
-        <button class="cta">Subscribe</button>
-      </div>
-    </div>
-  </footer>
+        <!-- FOOTER -->
+        <footer>
+          <div class="container footer__grid">
+            <div>
+              <span class="brand__logo"></span>
+              <p>Thanks for contributing to Maple Journey. Your story can help someone feel less alone.</p>
+            </div>
+            <div>
+              <button class="cta">Subscribe</button>
+            </div>
+          </div>
+        </footer>
 
-  <!-- Live character counter -->
-  <script>
-    const story = document.getElementById('story');
-    const count = document.getElementById('count');
-    if (story && count) {
-      const update = () => { count.textContent = story.value.length; };
-      story.addEventListener('input', update); update();
-    }
-  </script>
+        <!-- Live character counter -->
+        <script>
+          const story = document.getElementById('story');
+          const count = document.getElementById('count');
+          if (story && count) {
+            const update = () => { count.textContent = story.value.length; };
+            story.addEventListener('input', update); update();
+          }
+        </script>
 </body>
+
 </html>

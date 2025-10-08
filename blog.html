@@ -188,15 +188,44 @@
   <footer>
     <div class="container footer__grid">
       <div>
-        <span class="brand__logo">
-          <img src="images/logo.png" alt="Maple Journey Logo" />
-        </span>
-        <p>Short footer text placeholder</p>
-      </div>
-      <div>
-        <button class="cta">Subscribe</button>
-      </div>
+            <span class="brand__logo">
+                <img src="images/logo.png" alt="Maple Journey Logo" />
+            </span>
+            <p>Short footer text placeholder</p>
+        </div>
+
+        <div class="footer__links">
+            <div>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/maplejourney_bcit/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@MapleJourney-bcit">Youtube</a></li>
+                    <li><a href="https://www.tiktok.com/@maplejourney_bcit">Tiktok</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="share-your-stories.html">Share your stories</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button class="cta">Subscribe</button>
+        </div>
     </div>
+
+    <div class="sub-footer">
+        <p>&copy <span id="year"></span> Maple Journey. All Right Reserved. </p>
+    </div>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>

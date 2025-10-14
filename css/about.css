@@ -196,6 +196,47 @@ h3 {
 }
 
 /* ---------- Header / Navigation ---------- */
+:root {
+  --orange: #FE6807;
+  --blue: #2B00FF;
+  --light: #F3F3F3;
+  --black: #000000;
+  --radius: 20px;
+  --container: 1200px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: var(--black);
+  background: var(--light);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 3vw, 32px);
+}
+
+/*  HEADER  */
 header {
   position: sticky;
   top: 0;
@@ -224,12 +265,12 @@ header {
 .brand__logo {
   display: flex;
   align-items: center;
-  height: 55px;
+  height: 55px;  
 }
 
 .brand__logo img {
   height: 100%;
-  width: auto;
+  width: auto;  
 }
 
 nav ul {
@@ -488,4 +529,58 @@ nav a:hover {
   }
 
   /* simple mobile collapse */
+}
+footer {
+  background: var(--black);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer__grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  max-width: 38ch;
+  line-height: 1.4;
+}
+
+footer .cta {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+footer .cta:hover {
+  background: transparent;
+  color: var(--blue);
+}
+
+.footer__links {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+}
+
+.footer__links h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer__links a {
+  color: #ccc;
+}
+
+.footer__links a:hover {
+  color: var(--blue);
+}
+
+.sub-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #bbb;
 }

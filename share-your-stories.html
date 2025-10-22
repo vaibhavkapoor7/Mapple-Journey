@@ -31,7 +31,7 @@
       <a href="#" class="cta-mini">Sign in/ Sign up</a>
     </div>
   </header>
-
+<main>
   <!-- HERO (compact) -->
   <section class="hero hero--compact">
     <div class="wrap hero__content hero__content--single">
@@ -39,7 +39,7 @@
         <p class="kicker">Community</p>
         <h1 class="h1">Share Your Story</h1>
         <p class="lead">
-          Your experience can guide someone else. Tell us about your journey—what helped,
+          Your experience can guide someone else. Tell us about your journey, what helped,
           what surprised you, and what you wish you knew when you arrived.
         </p>
       </div>
@@ -55,7 +55,7 @@
           <h2>Tell us about yourself</h2>
           <p>Provide brief details about yourself, to gain access to our trusted pathway</p>
         </div>
-
+<div>
         <!-- White card with the form -->
         <form class="story-form" action="#" method="post" enctype="multipart/form-data" novalidate>
           <div class="field">
@@ -135,24 +135,59 @@
           </fieldset>
 
           <div class="actions">
-            <button type="submit" class="btn btn--blue">Submit story</button>
+            <button type="" class="btn btn--blue">Submit story</button>
             <button type="reset" class="btn btn--ghost">Clear</button>
           </div>
 
           <p class="form-note">No account needed. Submissions are reviewed before publishing.</p>
         </form>
-        <!-- FOOTER -->
-        <footer>
-          <div class="container footer__grid">
+      </div>
+
+      </main>
+      <footer>
+    <div class="container footer__grid">
+      <div>
+            <span class="brand__logo">
+                <img src="images/logo.png" alt="Maple Journey Logo" />
+            </span>
+            <p>Short footer text placeholder</p>
+        </div>
+
+        <div class="footer__links">
             <div>
-              <span class="brand__logo"></span>
-              <p>Thanks for contributing to Maple Journey. Your story can help someone feel less alone.</p>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/maplejourney_bcit/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@MapleJourney-bcit">Youtube</a></li>
+                    <li><a href="https://www.tiktok.com/@maplejourney_bcit">Tiktok</a></li>
+                </ul>
             </div>
+
             <div>
-              <button class="cta">Subscribe</button>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="share-your-stories.html">Share your stories</a></li>
+                </ul>
             </div>
-          </div>
-        </footer>
+        </div>
+
+        <div>
+            <button class="cta">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <p>&copy <span id="year"></span> Maple Journey. All Right Reserved. </p>
+    </div>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+      
 
         <!-- Live character counter -->
         <script>
@@ -164,5 +199,5 @@
           }
         </script>
 </body>
-
+ 
 </html>

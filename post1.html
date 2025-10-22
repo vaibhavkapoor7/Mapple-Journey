@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maple Journey</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand__logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+        <!-- <span>Maple Journey</span> -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="share-your-stories.html">Share your stories</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="cta-mini">Sign in/ Sign up</a>
+    </div>
+  </header>
+
+  <!--  HERO  -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">HELLO!</span>
+        <h1>Welcome to Your New Canadian Journey</h1>
+        <p>
+          Moving to Canada? Maple Journey helps you settle faster — from getting your BCID and SIN to finding housing, saving money, and exploring local life. Everything you need, in one place.
+        </p>
+        <a href="#" class="cta">Join now!</a>
+      </div>
+      <div class="hero__img">
+        <img src="images/homepage/hero.png" alt="hero students with luggage at airport">
+      </div>
+    </div>
+  </section>
+
+
+  <!--  FOOTER  -->
+  <footer>
+    <div class="container footer__grid">
+      <div>
+            <span class="brand__logo">
+                <img src="images/logo.png" alt="Maple Journey Logo" />
+            </span>
+            <p>Short footer text placeholder</p>
+        </div>
+
+        <div class="footer__links">
+            <div>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/maplejourney_bcit/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@MapleJourney-bcit">Youtube</a></li>
+                    <li><a href="https://www.tiktok.com/@maplejourney_bcit">Tiktok</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="share-your-stories.html">Share your stories</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button class="cta">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <p>&copy <span id="year"></span> Maple Journey. All Right Reserved. </p>
+    </div>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

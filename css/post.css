@@ -188,7 +188,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ---------- PAGER ---------- */
+/*  PAGER  */
 .post__pager {
   display: flex;
   justify-content: space-between;

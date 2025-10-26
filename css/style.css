@@ -130,13 +130,14 @@ nav a:hover {
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--black);
 }
 
 .hero h1 {
   font-size: clamp(2.25rem, 6vw, 4rem);
   line-height: 1.02;
   margin: 10px 0 18px;
+  color: var(--blue);
 }
 
 .hero p {

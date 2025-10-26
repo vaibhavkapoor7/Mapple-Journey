@@ -128,6 +128,7 @@ nav a:hover {
   font-size: clamp(2rem, 6vw, 3.5rem);
   line-height: 1.05;
   margin: 10px 0 16px;
+  color: var(--blue);
 }
 
 .blog-hero__copy p {

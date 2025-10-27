@@ -122,14 +122,6 @@ h3 {
   color: var(--muted);
 }
 
-.kicker {
-  color: var(--orange);
-  font-weight: 700;
-  font-size: .95rem;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-}
-
 /* ---------- Buttons & Pills ---------- */
 .btn {
   display: inline-flex;
@@ -196,18 +188,6 @@ h3 {
 }
 
 /* ---------- Header / Navigation ---------- */
-:root {
-  --orange: #FE6807;
-  --blue: #2B00FF;
-  --light: #F3F3F3;
-  --black: #000000;
-  --radius: 20px;
-  --container: 1200px;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 html, body {
   height: 100%;
@@ -320,11 +300,26 @@ nav a:hover {
   grid-template-columns: 1.15fr .85fr;
   align-items: center;
 }
+.hero__img {
+  height: 20rem;
+  width: 35rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.hero__copy .eyebrow {
+  display: inline-block;
+  font-size: .80rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--black);
+}
 
 .hero__actions {
   display: flex;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 /* ---------- Bands / Section Rows ---------- */

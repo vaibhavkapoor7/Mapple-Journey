@@ -113,16 +113,37 @@ nav a:hover {
 
 
 /* Compact hero */
-.hero--compact {
-  padding: 48px 0 24px;
+.hero {
+  background: var(--white);
+  padding: 64px 0 26px;
 }
 
-.hero__content--single {
-  grid-template-columns: 1fr;
+.hero__content {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: center;
+}
+.hero__img {
+  height: 20rem;
+  width: 35rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.hero__copy .eyebrow {
+  display: inline-block;
+  font-size: .80rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
-.hero__copy {
-  max-width: 820px;
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
 }
 
 /* ===== Share form panel ===== */

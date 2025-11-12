@@ -150,7 +150,7 @@ body {
   margin-top: 20px;
 }
 
-/* ---------- CTA BOX ---------- */
+/*  CTA BOX  */
 .cta-box {
   display: flex;
   align-items: center;
@@ -207,7 +207,7 @@ body {
   color: var(--orange);
 }
 
-/* ---------- RESPONSIVE ---------- */
+/*  RESPONSIVE  */
 @media (max-width: 980px) {
   .post-grid {
     grid-template-columns: 1fr;

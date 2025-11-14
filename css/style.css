@@ -146,6 +146,13 @@ nav a:hover {
   max-width: 48ch;
 }
 
+.hero__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .cta {
   display: inline-block;
   margin-top: 18px;
@@ -340,3 +347,10 @@ footer .cta:hover {
   font-size: 0.9rem;
   color: #bbb;
 }
+
+@media (max-width: 860px){
+  .hero__img { 
+    order: 0; 
+    margin-bottom: 10px; 
+    }
+  }
